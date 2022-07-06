@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact Form - PHP/MySQL Demo Code</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    div {
+        
+        border-radius: 50px;
+        
+      } 
+      .marquee {
+        background-image: url(Flag-Kenya.jpg);
+        width: 1500px;
+        height: 180px;
+        -webkit-animation: marquee 4s infinite linear;
+        
+        outline:1px solid blue;
+      }
+      
+      @-webkit-keyframes marquee {
+        0% {
+          background-position: 0;
+        }
+      
+        100% {
+          background-position: -1190px;
+        }
+      }
+</style>
+        </head>
+
+   
+    <body>
+        <div class="sidebar">
+            <div class="logo-details">
+              <i class='bx bxl-c-plus-plus'></i>
+              <span class="logo_name">IDs</span>
+            </div>
+              <ul class="nav-links">
+                <li>
+                  <a href="#" class="active">
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="links_name">Dashboard</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="repapplied.php">
+                    <i class='bx bx-box' ></i>
+                    <span class="links_name">View Replacement Applied</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="collectioniput.php">
+                    <i class='bx bx-list-ul' ></i>
+                    <span class="links_name">Ready ID</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class='bx bx-pie-chart-alt-2' ></i>
+                    <span class="links_name">Analytics</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="viewcomp.php">
+                    <i class='bx bx-coin-stack' ></i>
+                    <span class="links_name">View IDs Complains</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class='bx bx-book-alt' ></i>
+                    <span class="links_name">Announcements</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="news.html">
+                    <i class='bx bx-user' ></i>
+                    <span class="links_name">News Post</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class='bx bx-message' ></i>
+                    <span class="links_name">Messages</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="admin.php">
+                    <i class='bx bx-cog' ></i>
+                    <span class="links_name">Home</span>
+                  </a>
+                </li>
+                <li class="log_out">
+                  <a href="logout.php">
+                    <i class='bx bx-log-out'></i>
+                    <span class="links_name">Log out</span>
+                  </a>
+                </li>
+              </ul>
+          </div>
+          
+          <section class="home-section">
+            <nav>
+              <div class="sidebar-button">
+                <i class='bx bx-menu sidebarBtn'></i>
+                <span class="dashboard">NEWS POST</span>
+              </div>
+              <div class="profile-details">
+                <!--<img src="images/profile.jpg" alt="">-->
+                <span class="admin_name"><?php echo $email?></span>
+                <i class='bx bx-chevron-down' ></i>
+              </div>
+            </nav>
+    
+    <h1>NEWS POST</h1>
+    <div id="marquee" class="marquee"></div>
+    
+   
+        <h2 style="margin-top: 0%;">
+      <pre>
+        <b>What is a digital identity and how does it work?</b>
+        Digital ID is the use of digital technologies to identify a person. 
+        Identification is usually through something one has, something one knows, or something one is. 
+        In a country like Kenya, people have long carried national identity cards with which they are identified. 
+        Banks also issue ATM cards which come with secret codes with which customers identify themselves. 
+        Its the same with mobile money services. These are examples of things people know. 
+        Biometrics is an example of identification through who one is. 
+        During elections, voters may use their fingerprints on biometric identification machines to verify identify. 
+        All these are forms of digital ID.
+        
+        Authentication is key to proving ones identity. 
+        Many view biometrics as the most unique identifiers and these are increasingly relied on for authentication. 
+        Under Kenyan law, biometrics include fingerprints, hand geometry, earlobe geometry, retina and iris patterns, 
+        as well as voice waves. For this reason, it is becoming normal to find biometric scanners at airports. 
+        With digital ID programmes, biometrics will increasingly be used for access to day-to-day government services.
+        
+        How is Kenya – among other countries implementing its digital ID system?
+        Kenyas digital ID system will replace the existing national ID card. 
+        The card has been in place since before independence. Its widely used to identify people when they use
+         government and private services and apply for jobs, driving licences, bank accounts and mobile phone SIM cards. 
+         The national ID card is a citizenship document that is normally taken out when a person turns 18.
+        
+        Get your news from people who know what they’re talking about.
+        The new digital ID programme, popularised as “Huduma Namba” (Kiswahili for “service number”) has several aims. 
+        It includes everyone in the system children, citizens and residents. It integrates all existing identity 
+        systems and makes them interoperable. And it centralises design and issuance of identity documents. 
+        The system will also integrate biometrics, shifting Kenya from the practice of validating identity documents to
+         authenticating people.
+        
+        To get a digital ID, one needs a primary identification document, for example a national ID, a passport for 
+        foreigners and a birth certificate for children. This has been problematic as there is a significant number 
+        of people without identity documents or who face barriers when acquiring these documents. 
+        They fear that once the new system is in place, they will become legally invisible to the state and be unable to
+         access services, since services will only be available through digital ID. In a case challenging Huduma Namba, 
+         one of these groups, the Nubians, expressed fear that if Kenya migrated to digital ID, they would be legally 
+         invisible and therefore unable to access government and private services.
+        
+        The high court has stopped its implementation, citing data security risks. What are they?
+        On 14 October 2021, the High Court declared that the roll-out of Huduma Namba was illegal for want of a Data 
+        Protection Impact Assessment. This is a process of identifying the impact of data processing on the rights and 
+        freedoms of the people to whom the data relates, and mitigating those risks. Huduma Namba data processing poses 
+        high risks, since very personal data such as one’s address, family relations and more importantly, biometrics, 
+        are collected.
+        
+        One way to think about risk is to imagine who would be affected were such data to be leaked. With biometrics, 
+        the greatest risk is that they are so unique that once leaked, the risk cannot easily be mitigated by resetting. 
+        It’s not like resetting a password or secret code.
+        
+        Another risk with data in the custody of government is state surveillance. The government can listen in to private
+         conversations and track people. We have seen governments using data for political campaigning, in ways that threaten
+          democracy.
+        
+        The High Court in Kenya therefore ordered the government to stop further processing of Huduma Namba or giving out 
+        of Huduma cards until the system’s impact had been assessed. This means the government should systematically assess 
+        all the risks associated with Huduma Namba data and think about how to minimise those risks so that if data leaked, 
+        it wouldn’t have a big impact on the people whose data it is.
+        
+        What are the other challenges?
+        One can view the challenges from two main perspectives – inclusion and protection from harm. With Kenya’s history of 
+        inequitable development across regions, there are those who risk being left out of digital ID and therefore missing 
+        out on government and private services. Digital ID can therefore worsen existing inequalities among communities, 
+        genders and people with different incomes.
+        
+        In the previous judgement on Huduma Namba, issues like the privacy of children were discussed. Their data should be 
+        protected from practices such as surveillance.
+        
+        With digital ID data, governments can also make unfair decisions on various groups, intentionally or unintentionally. 
+        So it’s important for people to be able to participate in designing the system. Kenya’s digital ID law was developed
+         without much participation, denying experts the opportunity to give input on issues such as data governance.
+      </pre>
+    </h2>
+   </body>
+</html>
